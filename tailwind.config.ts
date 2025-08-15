@@ -61,7 +61,8 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'gold-accent': 'hsl(var(--gold-accent))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +85,44 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'twinkle': {
+					'0%, 100%': {
+						opacity: '0.2',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.2)'
+					}
+				},
+				'twinkle-delayed': {
+					'0%, 100%': {
+						opacity: '0.1',
+						transform: 'scale(0.8)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'scale(1.1)'
+					}
+				},
+				'twinkle-slow': {
+					'0%, 100%': {
+						opacity: '0.3',
+						transform: 'scale(1.1)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.3)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'twinkle': 'twinkle 2s ease-in-out infinite',
+				'twinkle-delayed': 'twinkle-delayed 3s ease-in-out infinite 0.5s',
+				'twinkle-slow': 'twinkle-slow 4s ease-in-out infinite 1s'
 			}
 		}
 	},

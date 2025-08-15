@@ -2,6 +2,39 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import heroImage from "@/assets/hero-house.jpg";
 
+const TwinklingLights = () => {
+  // Generate random positions for twinkling lights
+  const lights = Array.from({ length: 30 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    animationDelay: Math.random() * 4,
+    size: 2 + Math.random() * 3,
+    animation: ['animate-twinkle', 'animate-twinkle-delayed', 'animate-twinkle-slow'][
+      Math.floor(Math.random() * 3)
+    ]
+  }));
+
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {lights.map((light) => (
+        <div
+          key={light.id}
+          className={`absolute w-2 h-2 bg-gold-accent rounded-full ${light.animation}`}
+          style={{
+            left: `${light.left}%`,
+            top: `${light.top}%`,
+            animationDelay: `${light.animationDelay}s`,
+            width: `${light.size}px`,
+            height: `${light.size}px`,
+            boxShadow: '0 0 6px currentColor'
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
 export const HeroSection = () => {
   return (
     <section 
@@ -13,6 +46,7 @@ export const HeroSection = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
+      <TwinklingLights />
       <div className="container mx-auto px-6 relative z-10">
         <h1 className="text-6xl lg:text-8xl font-bold text-white mb-6 tracking-tight">
           HOLIDAY
