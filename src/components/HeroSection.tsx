@@ -15,7 +15,7 @@ export const HeroSection = () => {
     >
       <div className="container mx-auto px-6 relative z-10">
         <h1 className="text-6xl lg:text-8xl font-bold text-white mb-6 tracking-tight">
-          CHRISTMAS
+          HOLIDAY
           <br />
           <span className="text-6xl lg:text-8xl italic font-bold">LIGHT SERVICES</span>
         </h1>

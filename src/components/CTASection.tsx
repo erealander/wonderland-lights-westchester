@@ -8,7 +8,7 @@ export const CTASection = () => {
           Ready To Have The Best
         </h2>
         <h3 className="text-5xl font-bold text-primary mb-8">
-          Christmas Ever!?
+          Holiday Season Ever!?
         </h3>
         
         <Button 

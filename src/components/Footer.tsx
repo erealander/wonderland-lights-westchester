@@ -38,7 +38,7 @@ export const Footer = () => {
           </div>
           
           <p className="text-muted-foreground text-sm">
-            Christmas Light Website Design By Professional Web Services
+            Holiday Light Website Design By Professional Web Services
           </p>
         </div>
         

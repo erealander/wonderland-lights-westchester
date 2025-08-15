@@ -1,18 +1,18 @@
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      title: "Christmas Light Installation Westchester",
-      content: "Steve at Wonderland Holiday Lights was terrific. Very professional and efficient. I HIGHLY recommend their Christmas Light installation service. My house lights are beautiful and I am ready for the holidays!",
+      title: "Holiday Light Installation Westchester",
+      content: "Steve at Wonderland Holiday Lights was terrific. Very professional and efficient. I HIGHLY recommend their holiday Light installation service. My house lights are beautiful and I am ready for the holidays!",
       author: "Lyn Marquis"
     },
     {
-      title: "Christmas Light Installation Westchester County",
-      content: "Great owner! I'm very satisfied and happy with their Christmas light installation service. Highly recommended",
+      title: "Holiday Light Installation Westchester County",
+      content: "Great owner! I&apos;m very satisfied and happy with their holiday light installation service. Highly recommended",
       author: "Michael Rogers"
     },
     {
-      title: "Christmas Lighting in Westchester County",
-      content: "If you want a high-end look for Christmas lighting at your home, I highly recommend Steve. Very professional service, equipment and seemless Christmas light installation service. Higly recommend this company",
+      title: "Holiday Lighting in Westchester County",
+      content: "If you want a high-end look for holiday lighting at your home, I highly recommend Steve. Very professional service, equipment and seemless holiday light installation service. Higly recommend this company",
       author: "Majera Majidi"
     }
   ];

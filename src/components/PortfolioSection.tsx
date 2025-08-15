@@ -15,7 +15,7 @@ export const PortfolioSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Professional Christmas Light Installation Westchester County
+            Professional Holiday Light Installation Westchester County
           </h2>
           <p className="text-xl text-primary">
             Click Any Image To Enlarge

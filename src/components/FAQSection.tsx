@@ -1,8 +1,8 @@
 export const FAQSection = () => {
   const faqs = [
     {
-      question: "After The holidays do you remove the Christmas Lights?",
-      answer: "Yes! When the holidays are over, we return to your home at a time convenient for you and safely remove all the decorations and lights. Your property is completely safe, and we won't disturb your day! We offer an all-inclusive service, meaning we handle every aspect of the Christmas light installation in Westchester County and Fairfield County, including the removal."
+      question: "After The holidays do you remove the Holiday Lights?",
+      answer: "Yes! When the holidays are over, we return to your home at a time convenient for you and safely remove all the decorations and lights. Your property is completely safe, and we won&apos;t disturb your day! We offer an all-inclusive service, meaning we handle every aspect of the holiday light installation in Westchester County and Fairfield County, including the removal."
     },
     {
       question: "If A Light Bulb Goes Out, Is This Under Warranty?",
@@ -19,7 +19,7 @@ export const FAQSection = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-8">
-            Frequently Asked Christmas Lighting Questions
+            Frequently Asked Holiday Lighting Questions
           </h2>
         </div>
         
