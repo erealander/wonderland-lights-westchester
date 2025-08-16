@@ -1,32 +1,42 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import processStep1 from "@/assets/process-step-1.jpg";
+import processStep2 from "@/assets/process-step-2.jpg";
+import processStep3 from "@/assets/process-step-3.jpg";
+import processStep4 from "@/assets/process-step-4.jpg";
+import processStep5 from "@/assets/process-step-5.jpg";
 
 export const ProcessSection = () => {
   const steps = [
     {
       number: "1",
       title: "Free Custom Design & Quote",
-      description: "The first step in using our services is our free custom quote and design. We have professional designers and state-of-the-art technology that can help bring your ideas to life. Whether you need just a little bit of advice or a whole lot of guidance, we&apos;ve got you covered. We&apos;ll help you find the perfect holiday light design for your home. We&apos;ll then provide a free quote for the design, which comes without any obligation!"
+      description: "The first step in using our services is our free custom quote and design. We have professional designers and state-of-the-art technology that can help bring your ideas to life. Whether you need just a little bit of advice or a whole lot of guidance, we've got you covered. We'll help you find the perfect holiday light design for your home. We'll then provide a free quote for the design, which comes without any obligation!",
+      image: processStep1
     },
     {
       number: "2", 
       title: "We Provide All Lights & Supplies",
-      description: "One of the best parts about using Wonderland Holiday Lights for your holiday lighting display is that we provide everything you might need. The lights, the fixtures, the fittings, and all other supplies specific to your design are included with our services. We own the lights and are leasing them to you as a part of our all-in-one service package. This means that you never have to worry about joining the holiday shopping queues at the store or forgetting anything you need. We supply 100% of what&apos;s needed!"
+      description: "One of the best parts about using Wonderland Holiday Lights for your holiday lighting display is that we provide everything you might need. The lights, the fixtures, the fittings, and all other supplies specific to your design are included with our services. We own the lights and are leasing them to you as a part of our all-in-one service package. This means that you never have to worry about joining the holiday shopping queues at the store or forgetting anything you need. We supply 100% of what's needed!",
+      image: processStep2
     },
     {
       number: "3",
       title: "Safe & Professional Installation", 
-      description: "Having workers at your home can, understandably, feel a little daunting. After all, your home is one of the most important and expensive things you own, and you don&apos;t want anyone to damage or ruin pieces of your property. However, when you use Wonderland Holiday Lights, we guarantee the safest and most professional holiday light installation in Westchester County and Fairfield County. Our crew is fully trained and qualified to handle any job without causing any damage to your house!"
+      description: "Having workers at your home can, understandably, feel a little daunting. After all, your home is one of the most important and expensive things you own, and you don't want anyone to damage or ruin pieces of your property. However, when you use Wonderland Holiday Lights, we guarantee the safest and most professional holiday light installation in Westchester County and Fairfield County. Our crew is fully trained and qualified to handle any job without causing any damage to your house!",
+      image: processStep3
     },
     {
       number: "4",
       title: "Free Maintenance Calls If Needed",
-      description: "While it is not a common occurrence, from time to time, a bulb may blow, flicker, break, or part of your lights might get knocked down due to the weather or animals. If this happens, we&apos;ll be there to come to fix the problem free of charge! All of our light installations come with a warranty, so if you ever need us, just give us a call, and we&apos;ll come out as soon as possible to rectify whatever issue you have."
+      description: "While it is not a common occurrence, from time to time, a bulb may blow, flicker, break, or part of your lights might get knocked down due to the weather or animals. If this happens, we'll be there to come to fix the problem free of charge! All of our light installations come with a warranty, so if you ever need us, just give us a call, and we'll come out as soon as possible to rectify whatever issue you have.",
+      image: processStep4
     },
     {
       number: "5",
       title: "Safely Remove & Store Everything",
-      description: "When the holidays are over, it&apos;s time for the lights to come down! At Wonderland Holiday Lights, we&apos;ll arrange with you whatever time is most convenient for us to come to your home and safely remove any lights or decorations. Just like with the installation, our removal service is swift, safe, and will not disturb you or your home. Additionally, once the lights are down, we&apos;ll take everything away and store it all safely at our facilities, ready for the following year. Never again will you have to find space in your garage or home for lights and fittings!"
+      description: "When the holidays are over, it's time for the lights to come down! At Wonderland Holiday Lights, we'll arrange with you whatever time is most convenient for us to come to your home and safely remove any lights or decorations. Just like with the installation, our removal service is swift, safe, and will not disturb you or your home. Additionally, once the lights are down, we'll take everything away and store it all safely at our facilities, ready for the following year. Never again will you have to find space in your garage or home for lights and fittings!",
+      image: processStep5
     }
   ];
 
@@ -93,9 +103,11 @@ export const ProcessSection = () => {
               </div>
               
               <div className="lg:w-1/2">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground">Process Image {step.number}</span>
-                </div>
+                <img 
+                  src={step.image} 
+                  alt={`${step.title} - Professional holiday lighting service`}
+                  className="aspect-video w-full rounded-lg object-cover"
+                />
               </div>
             </div>
           ))}
