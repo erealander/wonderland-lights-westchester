@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const PortfolioSection = () => {
   const portfolioItems = [
     { title: "Install Crew", location: "" },
@@ -38,9 +40,12 @@ export const PortfolioSection = () => {
           <h3 className="text-3xl font-bold text-white mb-4">
             New Customers Take $50 Off!
           </h3>
-          <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <Link 
+            to="/contact"
+            className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+          >
             Get A Fast Quote
-          </button>
+          </Link>
         </div>
       </div>
     </section>

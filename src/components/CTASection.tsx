@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const CTASection = () => {
   return (
@@ -12,10 +13,11 @@ export const CTASection = () => {
         </h3>
         
         <Button 
+          asChild
           size="lg"
           className="bg-primary text-white hover:bg-primary/90 px-12 py-6 text-2xl font-semibold"
         >
-          Get A Fast Quote
+          <Link to="/contact">Get A Fast Quote</Link>
         </Button>
       </div>
     </section>

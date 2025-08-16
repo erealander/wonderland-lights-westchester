@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import processStep1 from "@/assets/process-step-1.jpg";
 import processStep2 from "@/assets/process-step-2.jpg";
 import processStep3 from "@/assets/process-step-3.jpg";
@@ -66,10 +67,11 @@ export const ProcessSection = () => {
                 {index === 0 && (
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button 
+                      asChild
                       size="lg"
                       className="bg-primary text-white hover:bg-primary/90 px-8 py-4 text-lg font-semibold"
                     >
-                      Get A Fast Quote
+                      <Link to="/contact">Get A Fast Quote</Link>
                     </Button>
                     <Button 
                       variant="outline"
@@ -85,10 +87,11 @@ export const ProcessSection = () => {
                 {index === 3 && (
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button 
+                      asChild
                       size="lg"
                       className="bg-primary text-white hover:bg-primary/90 px-8 py-4 text-lg font-semibold"
                     >
-                      Get A Fast Quote
+                      <Link to="/contact">Get A Fast Quote</Link>
                     </Button>
                     <Button 
                       variant="outline"

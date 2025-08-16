@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import { Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   return (
@@ -15,7 +16,7 @@ export const Navigation = () => {
         </div>
         
         <div className="hidden lg:flex items-center space-x-8">
-          <a href="#" className="text-white hover:text-primary transition-colors border-b-2 border-primary">Home</a>
+          <Link to="/" className="text-white hover:text-primary transition-colors border-b-2 border-primary">Home</Link>
           <a href="#" className="text-white hover:text-primary transition-colors">About</a>
           <div className="relative group">
             <a href="#" className="text-white hover:text-primary transition-colors">Christmas Lighting</a>
@@ -23,15 +24,16 @@ export const Navigation = () => {
           <a href="#" className="text-white hover:text-primary transition-colors">Permanent Lighting</a>
           <a href="#" className="text-white hover:text-primary transition-colors">Blog</a>
           <a href="#" className="text-white hover:text-primary transition-colors">Locations</a>
-          <a href="#" className="text-white hover:text-primary transition-colors">Contact</a>
+          <Link to="/contact" className="text-white hover:text-primary transition-colors">Contact</Link>
         </div>
 
         <div className="flex items-center space-x-4">
           <Button 
+            asChild
             variant="outline"
             className="bg-transparent border-white text-white hover:bg-white hover:text-primary"
           >
-            Get A Fast Quote
+            <Link to="/contact">Get A Fast Quote</Link>
           </Button>
           <Button 
             variant="outline"

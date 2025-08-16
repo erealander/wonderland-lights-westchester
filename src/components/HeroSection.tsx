@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-house.jpg";
 
 const TwinklingLights = () => {
@@ -60,10 +61,11 @@ export const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
+            asChild
             size="lg"
             className="bg-primary text-white hover:bg-primary/90 px-8 py-4 text-lg font-semibold"
           >
-            Get A Fast Quote
+            <Link to="/contact">Get A Fast Quote</Link>
           </Button>
           <Button 
             variant="outline"
